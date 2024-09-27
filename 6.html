@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. Construa uma função sem retorno, que recebe a quantidade dias restantes no ano
+        e imprime uma mensagem. A mensagem varia de acordo com a quantidade de
+        dias restante</title>
+</head>
+<body>
+    <script>
+
+        function calcular(num){
+            if (num> 30){ 
+                var resultado = "Ainda falta muito para o natal."
+            }
+
+            else if (num <= 30){
+                var resultado = "Oba, quase ferias!"
+            }
+            alert(resultado)
+        }  
+
+        var num = parseFloat(prompt("Quantidadede dias restantes é "))
+        calcular(num)
+    </script>
+</body>
+</html>

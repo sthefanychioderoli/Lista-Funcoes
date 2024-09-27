@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pitagoras(cateto1,cateto2){
+            let hipotenusa = Math.sqrt((cateto1 * cateto1) + (cateto2 * cateto2))
+            return hipotenusa
+        }   
+
+        let cateto1 = parseInt(prompt("Digite um número: "))
+        let cateto2 = parseInt(prompt("Digite um número: "))
+
+        let resultado = pitagoras(cateto1,cateto2)
+        alert("O resultado é: " + resultado)
+    </script>
+</body>
+</html>

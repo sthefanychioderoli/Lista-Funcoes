@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var numero = parseFloat(prompt("Digite o primeiro número: "))
+        var operacao = prompt("Digite a operação: ")
+        var numero2 = parseFloat(prompt('Segundo número'))
+
+        function operacaoNumeros(N1, N2) {
+        if(operacao == '+'){
+            var resultado = N1 + N2
+        }
+        else if(operacao == '-'){
+            var resultado = N1 - N2
+        }
+        else if(operacao == '*'){
+            var resultado = N1 * N2
+        }
+        else if(operacao == '/'){
+            var resultado = N1 / N2
+        }
+        else{
+            var resultado = 'Insira uma operação válida'
+        }
+            return resultado
+        }
+
+        alert(operacaoNumeros(numero, numero2))
+    </script>
+</body>
+</html>

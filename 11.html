@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+         function dados() {
+            return Math.floor(Math.random() * 6) + 1 + Math.floor(Math.random() * 6) + 1
+        }
+
+        function jogo() {
+            var numero = dados();
+            alert('Você lançou: ' + numero);
+
+            if (numero == 7 && numero == 11) {
+                return 'Natural, você ganhou!';
+            } 
+            
+            else if (numero == 2 && numero == 3 && numero == 12) {
+                return 'Craps, você perdeu!';
+            } else {
+                var ponto = numero;
+                alert('Ponto! Jogue novamente.');
+
+                while (true) {
+                    numero = dados();
+                    alert('Você lançou: ' + numero);
+
+                    if (numero == ponto) {
+                        return 'Parabéns você ganhou!';
+                    } 
+                    
+                    else if (numero == 7) {
+                        return 'Parabéns, você perdeu!';
+                    }
+                }
+            }
+        }
+
+        alert(jogo())
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13. Embaralha palavra. Construa uma função que receba uma string como parâmetro
+        e devolva outra string com os carateres embaralhados. Por exemplo: se função
+        receber a palavra calopsita, pode retornar ptasicola ou qualquer outra
+        combinação possível, de forma aleatória. Padronize em sua função que todos os
+        caracteres serão devolvidos em caixa alta ou caixa baixa, independentemente de
+        como foram digitados.</title>
+</head>
+<body>
+    <script>
+        
+        function embaralhaPalavra( palavra){
+                return  palavra.toString().split('').sort(() => Math.random() - 0.5).join('');
+            }
+            let resultado = embaralhaPalavra(palavra);
+            alert("A palavra embaralhada é: " + resultado);
+
+    </script>
+</body>
+</html>

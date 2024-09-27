@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Escreva um programa que receba dois números inteiros n1 e n2, sendo estes entre
+        10 e 99. Crie uma função que receba estes dois números e retorne um novo número
+        n3, sendo que o primeiro dígito de n3 deve ser o primeiro dígito de n1 e o segundo
+        de n3 deve ser o último dígito de n2. Imprima n3 fora da função.</title>
+</head>
+<body>
+
+    <script>
+
+        function numeros(N1, N2) {
+            return N1.toString()[0] + N2.toString()[1];
+        }
+
+        var resultado = numeros(10, 12)
+        alert(resultado)
+        
+    </script>
+    
+</body>
+</html>

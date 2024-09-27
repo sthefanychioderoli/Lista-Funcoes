@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10. Reverso do número. Faça uma função que retorne o reverso de um número inteiro
+        informado. Por exemplo: 127 -> 721.</title>
+</head>
+<body>
+    <script>
+        function calcular (numero) {
+            var string = String(numero)
+            var resultado = string.split('')
+            var numreverse = resultado.reverse()
+            var numfinal = ''
+            for (i in numreverse){
+                numfinal = numfinal + numreverse[i]
+            }
+            return numfinal
+        }
+        var numero = prompt("Digite um número: ")
+        alert(calcular(numero))
+    </script>
+</body>
+</html>
